@@ -16,20 +16,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var text2: UITextField!
     
-    var tapCount=0
 
     @IBAction func buttonTpped(_ sender: AnyObject) {
         
+        coolLabel.text=String(Double(text1.text!)!+Double(text2.text!)!)
         
-        coolLabel.text="Now Cooler!"
         
-        print ("buttontapped")
         
-        tapCount=tapCount+1
         
-        if tapCount >= 20 {
-            self.coolLabel.text="You have Clicked ten times"
-        }
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
