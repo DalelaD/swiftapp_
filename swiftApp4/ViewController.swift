@@ -19,11 +19,11 @@ class ViewController: UIViewController {
 
     @IBAction func buttonTpped(_ sender: AnyObject) {
         
-        coolLabel.text=String(Double(text1.text!)!+Double(text2.text!)!)
+      //:  coolLabel.text=String(Double(text1.text!)!+Double(text2.text!)!)
         
+        coolLabel.text = "answer is...\(Double(text1.text!)! + Double(text2.text!)!)"
         
-        
-        
+    //: the string \(xxxx)" adds integer/double into string
         
         
     }
